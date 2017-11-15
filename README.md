@@ -1,7 +1,7 @@
 # Nginx_with_PHP_42
 ## How to install PHP on Nginx server at 42.
 ### First step getting nginx:
-  1. Run the following command ```brew update && brew install nginx```. Start nginx ```nginx -s reload``` or ```brew servcices start nginx```. Try if it work's. Open your Browser http://localhost:8080/
+  1. Run the following command ```brew update && brew install nginx```. Start nginx ```nginx -s reload``` or ```brew services start nginx```. Try if it work's. Open your Browser http://localhost:8080/
 
   2. Now you should modify a little bit your nginx configuration. Open **nginx.conf** which should be in _/Users/<student_login>/.brew/etc/nginx/nginx.conf_
 
