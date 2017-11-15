@@ -30,4 +30,6 @@ location ~ \.php$ {
 ### Final step
 Just run ``` nginx -s reload``` you can find the binary in _/Users/<student_login>/.brew/bin/nginx_
 
-Open your Browser http://localhost:8080/
+run ```brew services start homebrew/php/php70```
+
+Open your Browser http://localhost:8080/ it should be work !
