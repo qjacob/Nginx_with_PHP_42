@@ -1,0 +1,35 @@
+worker_processes  1;
+ 
+#error_log  logs/error.log;
+#error_log  logs/error.log  notice;
+#error_log  logs/error.log  info;
+ 
+events {
+    worker_connections  1024;
+}
+ 
+ 
+http {
+    include       mime.types;
+    include       sites-enabled/*; # load virtuals config
+    sendfile        on;
+    keepalive_timeout  65;
+ 
+    # gzip  on;
+    # gzip_disable "MSIE [1-6].(?!.*SV1)";
+ 
+    server {
+        listen       8080;
+        server_name  localhost;
+ 
+        location / {
+	    include /Users/qjacob/.brew/etc/php/7.0/php-fpm.d/php-fpm;
+            root  html;
+            try_files  $uri  $uri/  /index.php?$args ;
+            index  index.php;
+        }
+ 
+        # configure *.PHP requests
+	
+    }
+}
