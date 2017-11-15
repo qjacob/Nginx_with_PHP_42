@@ -29,3 +29,5 @@ location ~ \.php$ {
 
 ### Final step
 Just run ``` nginx -s reload``` you can find the binary in _/Users/<student_login>/.brew/bin/nginx_
+
+Open your Browser http://localhost:8080/
