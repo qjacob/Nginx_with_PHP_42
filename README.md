@@ -33,3 +33,5 @@ Just run ``` nginx -s reload``` you can find the binary in _/Users/<student_logi
 run ```brew services start homebrew/php/php70```
 
 Open your Browser http://localhost:8080/ it should be work !
+
+(**ref that help me a lot:** https://gist.github.com/dtomasi/ab76d14338db82ec24a1fc137caff75b)
